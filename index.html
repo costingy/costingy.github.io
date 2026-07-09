@@ -4,6 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>碎碎念博客</title>
+
+    body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    /* 这里的颜色可以换成你喜欢的搭配 */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    /* 触发动画：20秒完成一次循环，无限重复 */
+    animation: gradientBg 20s ease infinite;
+}
+
+/* 定义背景移动的动画效果 */
+@keyframes gradientBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 确保内容字体的颜色不会和背景冲突 */
+.content {
+    color: white;
+    text-align: center;
+    padding-top: 20vh;
+}
   </head>
   <body>
     
